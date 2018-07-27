@@ -116,7 +116,7 @@ function showMobliesDetail(mobileIndex)
     document.querySelector("#card-detail #mobile-os.card-text span").innerHTML=`${mobilePhones[mobileIndex].OS}`;           
     document.querySelector("#card-detail #mobile-cpu.card-text span").innerHTML=`${mobilePhones[mobileIndex].CPU}`;           
     document.querySelector("#card-detail #mobile-camera.card-text span").innerHTML=`${mobilePhones[mobileIndex].CAMERA}`;           
-    
+    document.querySelector("a.btn#more-info").href= `${mobilePhones[mobileIndex]["More Details"]}`;   
     // document.querySelector("#more-info")            
 }
 
