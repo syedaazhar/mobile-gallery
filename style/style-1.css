@@ -1,3 +1,9 @@
+body
+{
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+
 .navbar
 {
     background: #00c4cc;
@@ -7,49 +13,84 @@
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-brand
 {
     color: white;
-    font-weight: bold;
+    font-size: 20px;
 }
 
 .navbar-light .navbar-brand:hover
 {
     color: #ffffff;
-    
 }
+
+.navbar-light .navbar-brand
+{
+    font-family: 'Monoton', cursive;
+    font-size: 25px;
+}
+
 
 .container
 {
     display: grid;
     height: 100%;
     grid-template-columns: auto auto ;
-    grid-gap: 0px;
+    grid-gap: 20px;
     background-color: white;
     padding: 20px;
-    background-color: #f3f6ff
+    margin-top: 25px;
+    
 }
 
-.container > div
+.container > .mobile-card
 {
     background-color: white;
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
-    height: 380px;
-    margin: 10px;
+    height:431px;
+    margin: 0 auto;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.75);
+}
+.img:first-child
+{
+    width: 288px;
 }
 
-.img
+.img2
+{
+    width:296px;
+}
+
+.img:last-child
+{
+    width: 299px;
+}
+.img:nth-of-type(2){
+
+    width: 263px;
+    background-color: #00C4CC;
+}
+
+.img, .img2
 {
     background-position:center;
     background-size:cover;
-    width: 289px;
+    width: 249px;
     height: 349px;
     margin: 0 auto;
 }
 
-.d-flex
+.card-footer
 {
-    background-color:#0e1318;
-    height: 79px;
+    background-color: #00c4cc;
+    background-image: linear-gradient(139deg, rgba(0, 196, 204, 0.5) 0%, rgba(125, 42, 232, 0.5) 100%);
+    height: 50px;
+    color: #ffffff;
+    font-family: 'Rancho', cursive;
+    font-size: 20px;
+    text-align: center;
 }
 
 @media only screen and (max-width: 781px)
@@ -59,3 +100,13 @@
         grid-template-columns:auto;
     }
 }
+
+
+@media only screen and (max-width: 387px)
+{
+    .img
+    {
+       width: 100px;
+    }
+}
+

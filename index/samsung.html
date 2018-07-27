@@ -4,9 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="../script/samsung.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Monoton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Rancho" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style/samsung.css">
     
+    <title>samsung phones</title>
+</head>
+<body onload="showitem()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">MOBILE GALLERY</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+         <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html" target="_blank">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active" >
+                    <a class="nav-link" href="samsung.html">Samsung</a>
+                </li>
+                <li class="nav-item active" >
+                    <a class="nav-link" href="apple.html" target="_blank">Apples</a>
+                </li>
+                <li class="nav-item active" >
+                    <a class="nav-link" href="oppo.html" target="_blank">Oppo</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="d-flex p-2 bd-highlight w3-hover-grayscale">
+        <div class="cover-img"></div>
+        <p class="iphone-heading">
+            SAMSUNG PHONES
+        </p>
+       
+    </div>
+    <div id="container"></div>
+
+    <div id="card-detail" class="card text-center" >
+        <div class="card text-center">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5 id="mobile-name" class="card-title" >
+                    Model Name : <span></span> 
+                </h5>
+                <p id="mobile-technology" class="card-text">
+                    Technology : <span></span>
+                </p>
+                <div id="mobile-img" class="card-text">
+                </div>
+                <p id="mobile-os" class="card-text" >
+                    OS: <span></span>
+                </p>
+                <p id="mobile-cpu" class="card-text" > 
+                    CPU : <span></span>
+                </p>
+                <p id="mobile-camera" class="card-text"> CAMERA :    
+                    <span></span>
+                </p>
+                <a href="" target="blank_"  class="btn btn-primary" id="more-info">More Details Click Here
+                   
+                </a>
+            </div>
+            <div class="card-footer">
+                made with by Maria Azhar
+              </div>
+        </div>
+    </div>
+
+
 </body>
 </html>

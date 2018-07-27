@@ -78,7 +78,7 @@ let mobilePhones= [
     }
     ,
     {
-        "modalName" : "Apple Watch Edition 38mm\n \(1st gen)",
+        "modalName" : "Apple Watch Edition 38mm (1st gen)",
         "Technology"    : "No cellular connectivity",
         "image" : "AppleWatch38mm.jpeg",
         "OS" : "watchOS 1.0, upgradable to 4.3.2",
@@ -96,49 +96,27 @@ function showitem()
     for(i=0;i< mobilePhones.length;i++)
     {
         containerEl.innerHTML +=`
-                            <div class=" mobileCards" onclick="showMobliesDetail(${i})">
-                                 <div class ="img" style="background-image:url(../images/${mobilePhones[i].image})">
+                            <a href="#card-detail" class=" mobileCards" onclick="showMobliesDetail(${i})">
+                                 <div class ="img" style="background-image:url(../images/iphones/${mobilePhones[i].image})">
                                 <p class="modal-name">
                                     ${mobilePhones[i].modalName};
                                 </p> 
-                            </div>
+                                </div>
+                            </a>
                         `   
     }
 }
 
 function showMobliesDetail(mobileIndex)
 {
-    let cardDetail=document.querySelector("#card-detail");
     
-
-        cardDetail.innerHTML =`
-                                <div class="card text-center">
-                                    <div class="card-header">
-                                        Featured
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 id="mobile-name" class="card-title" >
-                                            modalName : ${mobilePhones[mobileIndex].modalName}
-                                        </h5>
-                                        <p id="mobile-technology" class="card-text">
-                                            Technology : ${mobilePhones[mobileIndex].Technology}
-                                        </p>
-                                        <div id="mobile-img" class="card-text" 
-                                        style="background-image:url(../images/${mobilePhones[mobileIndex].image})">
-                                        </div>
-                                        <p id="mobile-os" class="card-text" >
-                                            OS: ${mobilePhones[mobileIndex].OS}
-                                        </p>
-                                        <p id="mobile-cpu" class="card-text" > 
-                                            CPU : ${mobilePhones[mobileIndex].CPU}
-                                        </p>
-                                        <p id="mobile-camera" class="card-text"> CAMERA :    
-                                            ${mobilePhones[mobileIndex].CAMERA}
-                                        </p>
-                                        <a href=${mobilePhones[mobileIndex]["More Details"]} target="blank_"  class="btn btn-primary" id="more-info">More Details Click Here
-                                           
-                                        </a>
-                                    </div>
-                                </div>
-        `
+    document.querySelector("#card-detail #mobile-name.card-title span").innerHTML=`${mobilePhones[mobileIndex].modalName}`;           
+    document.querySelector("#card-detail #mobile-technology.card-text span").innerHTML=`${mobilePhones[mobileIndex].Technology}`;  
+    document.querySelector("#mobile-img").style["background-image"] = `url(../images/iphones/${mobilePhones[mobileIndex].image})`;                                    
+    document.querySelector("#card-detail #mobile-os.card-text span").innerHTML=`${mobilePhones[mobileIndex].OS}`;           
+    document.querySelector("#card-detail #mobile-cpu.card-text span").innerHTML=`${mobilePhones[mobileIndex].CPU}`;           
+    document.querySelector("#card-detail #mobile-camera.card-text span").innerHTML=`${mobilePhones[mobileIndex].CAMERA}`;           
+    
+    // document.querySelector("#more-info")            
 }
+

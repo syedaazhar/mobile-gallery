@@ -30,7 +30,7 @@ body
 .d-flex
 {
     height: 303px;
-    background-image: url(../images/iphone-apple-mobile-phone-1920x1080.jpg);
+    background-image: url(../images/samsungcover.jpg);
     background-position: center;
     background-size: cover;
     font-size: 30px;
@@ -79,7 +79,7 @@ body
 {
     background-position:center;
     background-size:cover;
-    width: 195px;
+    width: 168px;
     height: 224px;
     margin: 0 auto;
 }
@@ -109,9 +109,9 @@ body
 
 #mobile-img
 {
-    background-position: right;
+    background-position: center;
     background-size:cover;
-    width: 200px;
+    width: 150px;
     height: 200px;
     margin: 0 auto;
 }
