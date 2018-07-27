@@ -1,0 +1,165 @@
+body
+{
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.navbar
+{
+    background: #00c4cc;
+    background-image: linear-gradient(139deg, #00C4CC 0%, #7D2AE8 100%);
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-brand
+{
+    color: white;
+    
+    font-size: 20px; 
+}
+
+.navbar-light .navbar-brand
+{
+    font-family: 'Monoton', cursive;
+    font-size: 25px;
+}
+
+.navbar-light .navbar-brand:hover
+{
+    color: #ffffff;
+    
+}
+
+.d-flex
+{
+    height: 303px;
+    background-image: url(../images/iphone-apple-mobile-phone-1920x1080.jpg);
+    background-position: center;
+    background-size: cover;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    align-items: flex-end;
+}
+
+.iphone-heading
+{
+    padding: 0 16px;
+}
+
+#container
+{
+    display: grid;
+    height: 100%;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+}
+
+.mobileCards{
+    width: 225px;
+    height: 315px;
+    /* border-radius:5px; */
+    -webkit-box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 22px -1px rgba(0,0,0,0.75);
+    margin: 30px 5px 15px;   
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 18px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.img
+{
+    background-position:center;
+    background-size:cover;
+    width: 195px;
+    height: 224px;
+    margin: 0 auto;
+}
+
+.modal-name
+{
+   background-color: #e0e0e0;
+   color: #383636;
+   position: absolute;
+   top:245px;
+   left: 0;
+   width: 225px;
+   height:70px; 
+   text-align: center;
+   font-size:20px;
+   padding: 15px 0;
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+
+.mobileCards:hover .modal-name
+{
+    background-color: #00c4cc;
+    background-image: linear-gradient(139deg, #00C4CC 0%, #7D2AE8 100%);
+    color: #ffffff;
+}
+
+#mobile-img
+{
+    background-position: right;
+    background-size:cover;
+    width: 200px;
+    height: 200px;
+
+}
+
+@media only screen and (max-width:1047px)
+{
+    #container
+    {
+        grid-template-columns:auto auto auto;
+    }
+    .mobileCards
+    {
+        width: 225px;
+        height:315px;;
+    }
+}
+
+@media only screen and (max-width: 885px)
+{
+    #container
+    {
+        grid-template-columns:auto auto ;
+    }
+    .mobileCards
+    {
+        width: 329px;
+        height:315px;
+    }
+    .modal-name
+    {
+        width: 329px;
+    }
+   
+}
+
+@media only screen and (max-width:721px)
+{
+    #container
+    {
+        grid-template-columns:auto;
+        justify-content:center;
+    }
+    .mobileCards
+    {
+        width: 358px;
+        height:314px;
+    }
+    .modal-name
+    {
+        width: 359px;
+    }
+}
