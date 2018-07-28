@@ -159,6 +159,17 @@ span
     margin: 0;
 }
 
+.btn-primary 
+{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    height: 49px;
+    /* padding: 11px 14px; */
+    padding: 14px;
+    font-weight: bold;
+}
+
 @media only screen and (max-width:1047px)
 {
     #container
