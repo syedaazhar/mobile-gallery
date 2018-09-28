@@ -109,7 +109,7 @@ function showitem()
 
 function showMobliesDetail(mobileIndex)
 {
-    
+    document.querySelector('#card-detail').style.display = 'block';
     document.querySelector("#card-detail #mobile-name.card-title span").innerHTML=`${mobilePhones[mobileIndex].modalName}`;           
     document.querySelector("#card-detail #mobile-technology.card-text span").innerHTML=`${mobilePhones[mobileIndex].Technology}`;  
     document.querySelector("#mobile-img").style["background-image"] = `url(../images/samsung/${mobilePhones[mobileIndex].image})`;                                    

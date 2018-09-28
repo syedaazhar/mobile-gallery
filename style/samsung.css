@@ -119,6 +119,7 @@ body
 #card-detail
 {
     font-family: 'Cinzel', serif;
+    display: none;
 }
 
 .card-header, .card-footer
@@ -128,6 +129,8 @@ body
     color: #ffffff;
     font-weight: bold;
     font-size: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 .card-footer
